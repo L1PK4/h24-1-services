@@ -1,0 +1,20 @@
+[project]
+name = "h24-1-services"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "l1pk4", email = "ostrishko.danila@gmail.com"},
+]
+dependencies = [
+    "fastapi>=0.110.1",
+    "pydantic-settings>=2.2.1",
+    "hypercorn>=0.16.0",
+    "sqlalchemy[asyncio]==2.0.4",
+    "asyncpg==0.29",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
